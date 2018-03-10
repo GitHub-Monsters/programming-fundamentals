@@ -6,12 +6,12 @@ namespace Debit_Card_Number
     {
         static void Main(string[] args)
         {
-            var digit1 = int.Parse(Console.ReadLine());
-            var digit2 = int.Parse(Console.ReadLine());
-            var digit3 = int.Parse(Console.ReadLine());
-            var digit4 = int.Parse(Console.ReadLine());
+            var num1 = int.Parse(Console.ReadLine());
+            var num2 = int.Parse(Console.ReadLine());
+            var num3 = int.Parse(Console.ReadLine());
+            var num4 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"{digit1:D4} {digit2:D4} {digit3:D4} {digit4:D4}");
+            Console.WriteLine($"{num1:D4} {num2:D4} {num3:D4} {num4:D4}");
         }
     }
 }
