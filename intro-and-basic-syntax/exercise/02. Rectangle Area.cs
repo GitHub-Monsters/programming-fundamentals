@@ -1,4 +1,5 @@
-﻿using System;
+﻿// CONFIRMED from HrBozhidarov
+using System;
 
 namespace _02._Rectangle_Area
 {
