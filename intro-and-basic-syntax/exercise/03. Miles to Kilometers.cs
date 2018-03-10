@@ -6,13 +6,13 @@ namespace P03_Miles_To_Kilometers
     {
         static void Main(string[] args)
         {
-            const double mile= 1.60934;
+            const double mile= 1.60934; // 1 mile = 1.60934 km
 
-            var kilometers = double.Parse(Console.ReadLine());
+            var kilometers = double.Parse(Console.ReadLine()); // we read the km from the console
 
-            var miles = kilometers * mile;
+            var miles = kilometers * mile; // we turn the km in miles
 
-            Console.WriteLine($"{miles:F2}");
-        }
+            Console.WriteLine($"{miles:F2}"); // we get back the km in miles
+        } 
     }
 }
