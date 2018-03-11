@@ -21,27 +21,32 @@ namespace Learning_1
              * where the dots are the missing point up to the max
 
             */
-
+            //receve name of character
             string characterName = Console.ReadLine();
+            // on next 4 lines we receve health information about character
             int currentHealth = int.Parse(Console.ReadLine());
             int maxHealth = int.Parse(Console.ReadLine());
             int currentEnergy = int.Parse(Console.ReadLine());
             int maxEnergy = int.Parse(Console.ReadLine());
-            Console.WriteLine("Name: {0}", characterName);
-            if (currentHealth == maxHealth)
+                
+            Console.WriteLine("Name: {0}", characterName); //print the name of character
+            
+            if (currentHealth == maxHealth) //we check that the current health is equal to the maximum
             {
-                Console.Write("Health: {0}\n", new string('|', maxHealth + 2));
+                Console.Write("Health: {0}\n", new string('|', maxHealth + 2)); //print the result
             }
-            else if (currentHealth < maxHealth)
+            else if (currentHealth < maxHealth)  // we check that current health is less than the maximum
             {
+                // print the result
                 Console.Write("Health: {0}{1}{2}{3}\n", new string('|', 1), new string('|', currentHealth), new string('.', (maxHealth - currentHealth)), new string('|', 1));
             }
-            if (currentEnergy == maxEnergy)
+            if (currentEnergy == maxEnergy). // we check that current health is equal with maximum
             {
-                Console.Write("Energy: {0}\n", new string('|', maxEnergy + 2));
+                Console.Write("Energy: {0}\n", new string('|', maxEnergy + 2));  //print the result
             }
-            else if (currentEnergy < maxEnergy)
+            else if (currentEnergy < maxEnergy) // we check that current energy is less than maximum energy
             {
+                // print the result
                 Console.Write("Energy: {0}{1}{2}{3}\n", new string('|', 1), new string('|', currentEnergy), new string('.', (maxEnergy - currentEnergy)), new string('|', 1));
             }
 
