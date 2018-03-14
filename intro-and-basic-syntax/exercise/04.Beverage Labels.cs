@@ -7,7 +7,8 @@ namespace Beverage_Labels
         static void Main(string[] args)
         {
 			// Read from console name of product
-            string name = Console.ReadLine();
+			// changed variable from "name" to "beverageName", K.Pavlov, 14/03/2018
+            string beverageName = Console.ReadLine();
 			
 			// Read from console volume of product
             int volume = int.Parse(Console.ReadLine());
@@ -25,7 +26,7 @@ namespace Beverage_Labels
             double sugarResult = (sugar * volume) / 100.00;
 		
 			// Print volume and name of product
-            Console.WriteLine($"{volume}ml {name}:");
+            Console.WriteLine($"{volume}ml {beverageName}:");
 			
 			// Print energy in kcal and sugar in g of product
             Console.WriteLine($"{energyResult}kcal, {sugarResult}g sugars");
