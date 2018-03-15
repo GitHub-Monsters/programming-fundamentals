@@ -22,14 +22,14 @@ namespace Learning_1
 
             */
             //receve name of character
-            string characterName = Console.ReadLine();
-            // on next 4 lines we receve health information about character
+            string charName = Console.ReadLine();
+            // on next 4 lines we recieve health information about character
             int currentHealth = int.Parse(Console.ReadLine());
-            int maxHealth = int.Parse(Console.ReadLine());
+            double maxHealth = double.Parse(Console.ReadLine());
             int currentEnergy = int.Parse(Console.ReadLine());
             int maxEnergy = int.Parse(Console.ReadLine());
                 
-            Console.WriteLine("Name: {0}", characterName); //print the name of character
+            Console.WriteLine("Name: {0}", charName); //print the name of character
             
             if (currentHealth == maxHealth) //we check that the current health is equal to the maximum
             {
