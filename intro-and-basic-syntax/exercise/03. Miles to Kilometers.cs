@@ -8,7 +8,7 @@ namespace P03_Miles_To_Kilometers
         {
             const double mile= 1.60934; // 1 mile = 1.60934 km
 
-            var kilometers = double.Parse(Console.ReadLine()); // we read the km from the console
+            decimal kilometers = decimal.Parse(Console.ReadLine()); // we read the km from the console
 
             var miles = kilometers * mile; // we turn the km in miles
 
